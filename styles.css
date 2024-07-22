@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
+:root {
+  --color-green: hsl(75, 94%, 57%);
+  --color-white: hsl(0, 0%, 100%);
+  --color-grey-700: hsl(0, 0%, 20%);
+  --color-grey-800: hsl(0, 0%, 12%);
+  --color-grey-900: hsl(0, 0%, 8%);
+  --font-family: "Inter", sans-serif;
+  --font-weight-regular: 400;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-size-body: 14px;
+}
+
+body {
+  max-width: 100vw;
+  min-height: 70vh;
+  background-color: var(--color-grey-900);
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+body .container {
+  font-family: var(--font-family);
+  padding: 1.5rem;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--color-grey-800);
+  border-radius: 15px;
+  margin: 5rem;
+  width: 100%;
+  max-width: 350px;
+}
+body img {
+  border-radius: 100%;
+  height: 100px;
+  width: 100px;
+}
+body .headder-content h1 {
+  color: var(--color-white);
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin-bottom: 0px;
+}
+body .headder-content h2 {
+  color: var(--color-green);
+  text-align: center;
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+body .headder-content p {
+  color: var(--color-white);
+  text-align: center;
+  font-weight: 300;
+  font-size: 0.9rem;
+  margin-top: 1.5rem;
+  margin-bottom: 2px;
+}
+body .links {
+  text-align: center;
+  padding: 1.5rem;
+}
+body a {
+  color: var(--color-white);
+  text-decoration: none;
+}
+body a:active {
+  transform: scale(0.95);
+  background-color: var(--color-grey-700);
+}
+body .links ul {
+  list-style-type: none;
+  padding: 0;
+}
+body .links li {
+  position: relative;
+  background-color: var(--color-grey-700);
+  color: var(--color-white);
+  border-radius: 10px;
+  padding: 0.8rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  width: 15rem;
+  margin-bottom: 1rem;
+  overflow: hidden;
+}
+body .links li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 1.5;
+  color: inherit;
+  text-decoration: none;
+}
+body .footer-links {
+  color: var(--color-green);
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    border-radius: 1em;
+    overflow: hidden;
+    width: 40%;
+    background-color: var(--color-grey-800);
+    min-height: -moz-fit-content;
+    min-height: fit-content;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    border-radius: 1em;
+    overflow: hidden;
+    width: 70%;
+    background-color: var(--color-grey-800);
+    min-height: -moz-fit-content;
+    min-height: fit-content;
+  }
+}/*# sourceMappingURL=styles.css.map */
